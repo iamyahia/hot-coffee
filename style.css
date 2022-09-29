@@ -1,79 +1,339 @@
 /* nanor code / section */
-*{
-    margin: 0;
-    padding: 0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    box-sizing: border-box;
-  
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-sizing: border-box;
+}
+/* !melise code */
+/* *  navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  /* background: #b08968; */
+  background-color: transparent;
+  position: absolute;
+  top: 45px;
+  height: 0;
+  width: 100%;
+}
+nav h2 {
+  color: white;
+}
+
+/* CSS */
+.button-53 {
+  transition-delay: 0.1s;
+  transition-duration: 0.1s;
+  margin-top: 2rem;
+  background-color: transparent;
+  border: 0 solid #2152b5;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: 0.75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none white solid;
+  text-decoration-thickness: auto;
+  /* width: 100%; */
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-53:focus {
+  outline: 0;
+}
+
+.button-53:after {
+  content: "";
+  position: absolute;
+  border: 1px solid #ffffff;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button-53:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+.button-53:hover {
+  background-color: rgb(214, 214, 214);
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .button-53 {
+    padding: 0.75rem 3rem;
+    font-size: 1.25rem;
   }
-  
-  .footer {
-    margin-top: 100px;
-    width: 100%;
-    padding: 100px 15%;
-    background: #7f5539;
-    color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  padding-left: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+/* * section 1 */
+.section-1 {
+  background-image: url("https://demo.w3layouts.com/demos_new/template_demo/22-05-2020/coffee-liberty-demo_Free/1675664344/web/assets/images/banner1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 430px;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: white;
+}
+.content {
+  margin-left: 2rem;
+}
+
+/* 
+  Extra small devices (phones, 600px and down) 
+*/
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+    padding-top: 0.5rem;
+  }
+  nav li {
+    padding: 0.5rem 0;
+  }
+}
+
+/* ! yahia  */
+.container-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 3rem;
+}
+.card {
+  font-family: "Lato", Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 250px;
+  max-width: 310px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #2b2b2b;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.card * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.card .profile-image {
+  padding: 15% 10% 0;
+}
+
+.card .profile-image img {
+  max-width: 100%;
+  vertical-align: top;
+  position: relative;
+  /* border-radius: 50%; */
+  /* max-width: 40%; */
+}
+
+.card figcaption {
+  padding: 5% 10% 15%;
+}
+
+.card h3 {
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 3px 0;
+}
+
+.card h5 {
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+  color: #888;
+  letter-spacing: 1px;
+}
+
+.card .icons i {
+  color: #999;
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 1.5em;
+}
+
+.card .icons i:hover {
+  color: #555;
+}
+
+.card .icons i a {
+  text-decoration: none;
+}
+
+/* ! zeynab code */
+.products {
+  margin-top: 3rem;
+}
+.column1 {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 3%;
+  justify-content: space-around;
+  margin: 0px;
+}
+.column2 {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 3%;
+  justify-content: space-around;
+  margin: 0px;
+}
+img {
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+  border-left: 1px solid rgb(107, 79, 43);
+  border-right: 1px solid rgb(107, 79, 43);
+}
+h1 {
+  text-align: center;
+  font-style: italic;
+  font-style: normal;
+  color: rgb(84, 64, 36);
+}
+h3 {
+  font-size: 15px;
+}
+p {
+  width: 400px;
+  font-size: 15px;
+}
+
+@media (max-width: 900px) {
+  body {
+    text-align: center;
+  }
+
+  .column1 {
     display: flex;
-  
+    flex-direction: column;
+    width: auto;
   }
-  
-  .footer div{
-    text-align: center;
-  
-  }
-  
   .column2 {
-    flex-grow: 2;
-  
+    width: auto;
+    display: flex;
+    flex-direction: column;
   }
-  
-  .footer div h2 {
-    font-weight: 300;
-    margin-bottom: 30px;
-    
-  }
-  
-  .column1 a{
-    display: block;
-    text-decoration: none;
-    color:white;
-    margin-bottom: 10px;
-  
-  }
-  
-  form input {
-    width: 400px;
-    height: 45px;
-    border-radius: 4px;
+  p {
+    width: auto;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    outline: none;
-    border: none;
   }
-  
-  form button {
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-    border-radius: 30px;
-    padding: 10px 30px;
-    font-size: 15px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #ddb892;
-  }
-  
-  .maps div{
-    margin-top: 10px;
-    margin-bottom: 10px ;
-    border: 10px;
-    border-radius: 50px;
-  
-  }
-  
-  .column1 a:hover{
-    color:#ddb892;
-  }
+}
+/*  !nanor code */
+.footer {
+  height: 100%;
+  margin-bottom: 0px;
+  width: 100%;
+  padding: 100px 15%;
+  background: #7f5539;
+  color: white;
+  display: flex;
+}
+
+.footer div {
+  text-align: center;
+}
+
+.column2 {
+  flex-grow: 2;
+}
+
+.footer div h2 {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.column1 a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+}
+
+form input {
+  width: 400px;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+}
+
+form button {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddb892;
+}
+
+.maps div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 10px;
+  border-radius: 50px;
+}
+
+.column1 a:hover {
+  color: #ddb892;
+}

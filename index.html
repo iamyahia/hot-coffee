@@ -1,49 +1,209 @@
 <!-- nanor code -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
+  </head>
 
-    <body>
-<div class="footer">
-  <div class="column1">
-      <h2>Useful Links</h2>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Shop</a>
-      <a href="#">Blog</a>
-  </div> 
-  <div class="column2">
-      <h2>Newsletter</h2>
-      <form>
-          <input type="email" placeholder="Your Email Address" required>
-          <br>
+  <body>
+    <nav>
+      <h2>Coffee</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Music</a></li>
+      </ul>
+    </nav>
+    <!-- section one -->
+    <div class="section-1">
+      <div class="content">
+        <h1 style="color: white">Fresh Coffe in the Morning</h1>
+        <p>The Best Place to Start Your Day With Coffe</p>
+        <button class="button-53" role="button">Order know</button>
+      </div>
+    </div>
+
+    <div class="container-team">
+      <!-- yahia section -->
+      <h1>Our Team</h1>
+
+      <div class="figures">
+        <figure class="card">
+          <div class="profile-image">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt="profile-sample2"
+              width="250"
+              height="250"
+            />
+          </div>
+          <figcaption>
+            <h3>Sue Shei</h3>
+            <h5>founder</h5>
+            <p>
+              Which is worse, that everyone has his price, or that the price is
+              always so low.
+            </p>
+            <div class="icons">
+              <a href="#"><i class="ion-social-reddit"></i></a>
+              <a href="#"> <i class="ion-social-twitter"></i></a>
+              <a href="#"> <i class="ion-social-vimeo"></i></a>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="card">
+          <div class="profile-image">
+            <img src="images/Oscars-5.jpg" alt="profile-sample7" />
+          </div>
+          <figcaption>
+            <h3>Will Barrow</h3>
+            <h5>Web Designer</h5>
+            <p>
+              I'm killing time while I wait for life to shower me with meaning
+              and happiness.
+            </p>
+            <div class="icons">
+              <a href="#"><i class="ion-social-reddit"></i></a>
+              <a href="#"> <i class="ion-social-twitter"></i></a>
+              <a href="#"> <i class="ion-social-vimeo"></i></a>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="card">
+          <div class="profile-image">
+            <img
+              src="https://www.liveabout.com/thmb/Puwl08UOApU4qk88ZXtt9uYLUQA=/1333x1000/smart/filters:no_upscale()/GettyImages-590302741-576ad8305f9b58587528fe49-5bdb2ab34cedfd0026a64002.jpg"
+              alt="profile-sample6"
+            />
+          </div>
+          <figcaption>
+            <h3>Indigo Violet</h3>
+            <h5>Public Relations</h5>
+            <p>
+              The only skills I have the patience to learn are those that have
+              no real application in life.
+            </p>
+            <div class="icons">
+              <a href="#"><i class="ion-social-reddit"></i></a>
+              <a href="#"> <i class="ion-social-twitter"></i></a>
+              <a href="#"> <i class="ion-social-vimeo"></i></a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- ! zeynab code -->
+    <div class="products">
+      <h1>Our Preferred Coffee</h1>
+      <div class="column1">
+        <div>
+          <img
+            src="https://www.coffeeaddress.com/file/manual/CA_Home_Coffee_in_cafe@2x.png"
+            alt="Coffe"
+          />
+          <h3>Hot Beverages</h3>
+          <p>Wide range of Steaming hot coffees to make you fresh and light.</p>
+        </div>
+        <div>
+          <img
+            src="https://images.immediate.co.uk/production/volatile/sites/2/2021/08/coldbrew-iced-latte-with-my-recipe-photo-by-@ellamiller_photo-f1e3d9e.jpg"
+            alt="ice coffe"
+          />
+          <h3>Cold Beverages</h3>
+          <p>Creamy and coffe to make you fresh and light.</p>
+        </div>
+        <div>
+          <img
+            src="https://simplot-media.azureedge.net/-/media/foundation/recipes/strawberry-milkshake.jpg?rev=57dfda8bb12449f39a5cd8449a8e34ee"
+            alt="Milkshake"
+          />
+          <h3>Refereshments</h3>
+          <p>Fruity and icy refreshing drink to make you fresh and light.</p>
+        </div>
+      </div>
+
+      <div class="column2">
+        <div>
+          <img
+            src="https://www.losdanielsfoodtruck.com/uploads/1/3/0/2/130268400/s452915061371976610_p12_i1_w720.jpeg"
+            alt="Combos food"
+          />
+          <h3>Special Combos</h3>
+          <p>
+            Now it's really easy to chose your favorite eating and drinking
+            combinations.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://missvickie.com/wp-content/uploads/2021/01/is-a-burger-a-sandwich.jpg"
+            alt="Burger"
+          />
+          <h3>Sandwiches & Burgers</h3>
+          <p>Yummy! Quick bites to satisfy your small size hunger.</p>
+        </div>
+        <div>
+          <img
+            src="https://insanelygoodrecipes.com/wp-content/uploads/2020/10/Homemade-Chocolate-Pasta-500x375.png"
+            alt="Chocolate "
+          />
+          <h3>Desserts</h3>
+          <p>
+            This for would satiate your palate and take you on a culinary treat.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ! nanor code -->
+    <div class="footer">
+      <div class="column1">
+        <h2>Useful Links</h2>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Shop</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="column2">
+        <h2>Newsletter</h2>
+        <form>
+          <input type="email" placeholder="Your Email Address" required />
+          <br />
           <button type="submit">Subscribe Now</button>
-      </form>
-  </div>
-  <div class="column3">
-      <h2>Contact</h2>
-                  <span class="fas fa-map-marker-alt"></span>
-                  <span class="text">Jal El Dib, Beirut</span>
-                  <br> 
-                  <span class="fas fa-phone-alt"></span>
-                  <span class="text">+961-76523155</span>
-                  <br>
-                  <span class="fas fa-envelope"></span>
-                  <span class="text">cloudcoffee@gmail.com</span> 
+        </form>
+      </div>
+      <div class="column3">
+        <h2>Contact</h2>
+        <span class="fas fa-map-marker-alt"></span>
+        <span class="text">Jal El Dib, Beirut</span>
+        <br />
+        <span class="fas fa-phone-alt"></span>
+        <span class="text">+961-76523155</span>
+        <br />
+        <span class="fas fa-envelope"></span>
+        <span class="text">cloudcoffee@gmail.com</span>
 
-
-
-      <div class="maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.377721465781!2d35.57682641521119!3d33.90567688064613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f3f47f9c0310d%3A0x4d204a68c4502e8f!2sCloud%20Coffee!5e0!3m2!1sen!2slb!4v1664127365679!5m2!1sen!2slb" width="200" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-      
-  </div>
-
-</div>
-<script src="script.js"></script>
-</body>
+        <div class="maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.377721465781!2d35.57682641521119!3d33.90567688064613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f3f47f9c0310d%3A0x4d204a68c4502e8f!2sCloud%20Coffee!5e0!3m2!1sen!2slb!4v1664127365679!5m2!1sen!2slb"
+            width="200"
+            height="180"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
