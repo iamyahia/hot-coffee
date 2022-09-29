@@ -214,7 +214,7 @@ nav a {
 .products {
   margin-top: 3rem;
 }
-.column1 {
+.column1Z {
   width: auto;
   display: flex;
   flex-direction: row;
@@ -222,7 +222,7 @@ nav a {
   justify-content: space-around;
   margin: 0px;
 }
-.column2 {
+.column2Z {
   width: auto;
   display: flex;
   flex-direction: row;
@@ -251,17 +251,17 @@ p {
   font-size: 15px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   body {
     text-align: center;
   }
 
-  .column1 {
+  .column1Z {
     display: flex;
     flex-direction: column;
     width: auto;
   }
-  .column2 {
+  .column2Z {
     width: auto;
     display: flex;
     flex-direction: column;
